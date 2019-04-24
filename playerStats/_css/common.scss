@@ -1,0 +1,7 @@
+@import './colours.scss';
+
+@mixin flexCenterCenter(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

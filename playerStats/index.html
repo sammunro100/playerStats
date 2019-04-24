@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Player Stat Card</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css"  href="./_css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="playerStatsCard">
+        <div class="playerStatsCard_topHalf">
+            <select class="playerStatsCard_select" id="playerNamesList" onChange="getOptValue()"></select>
+            <img src="" alt="" class="playerStatsCard_topHalf_playerPic" id="playerImage">
+        </div>
+        <div class="playerStatsCard_bottomHalf" id="bottomHalf">
+            <div class="playerStatsCard_bottomHalf_spriteCircle">
+                <img src="" alt="" class="playerStatsCard_bottomHalf_sprite" id="playerClubSprite">
+            </div>
+            <h1 class="playerStatsCard_bottomHalf_playerName" id="playerName"></h1>
+            <p class="playerStatsCard_bottomHalf_playerPos" id="playerRole"></p>
+            <div class="playerStatsCard_bottomHalf_statsSection">
+                <p class="playerStatsCard_bottomHalf_statsSection_type">Appearances</p>
+                <p class="playerStatsCard_bottomHalf_statsSection_stat" id="appearances">5</p>
+            </div>
+            <div class="playerStatsCard_bottomHalf_statsSection">
+                <p class="playerStatsCard_bottomHalf_statsSection_type">Goals</p>
+                <p class="playerStatsCard_bottomHalf_statsSection_stat" id="goals">5</p>
+            </div>
+            <div class="playerStatsCard_bottomHalf_statsSection">
+                <p class="playerStatsCard_bottomHalf_statsSection_type">Assists</p>
+                <p class="playerStatsCard_bottomHalf_statsSection_stat" id="assists">5</p>
+            </div>
+            <div class="playerStatsCard_bottomHalf_statsSection">
+                <p class="playerStatsCard_bottomHalf_statsSection_type">Goals per match</p>
+                <p class="playerStatsCard_bottomHalf_statsSection_stat" id="GPM">5</p>
+            </div>
+            <div class="playerStatsCard_bottomHalf_statsSection">
+                <p class="playerStatsCard_bottomHalf_statsSection_type">Passes per minute</p>
+                <p class="playerStatsCard_bottomHalf_statsSection_stat" id="PPM">5</p>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
